@@ -18,7 +18,7 @@ type kanoserver struct{}
 
 // SayHello implements helloworld.GreeterServer
 func (s *kanoserver) RpcMethod(ctx context.Context, in *pb.RpcRequest) (*pb.RpcResponse, error) {
-	return &pb.RpcResponse{ResponseParam: "Hello KOKE" + in.RequestParam}, nil
+	return &pb.RpcResponse{ResponseParam: "Hello KOKE FROM SERVER" + in.RequestParam}, nil
 }
 
 
