@@ -8,6 +8,7 @@ import (
 
 	"google.golang.org/grpc"
 	pb "github.com/KanybekMomukeyev/testingGRPC/protolocation"
+	"fmt"
 )
 
 type customerService struct {
@@ -16,6 +17,9 @@ type customerService struct {
 }
 
 func (cs *customerService) ListPerson(p *pb.RequestType, stream pb.CustomerService_ListPersonServer) error {
+
+	fmt.Print("ListPerson called from server")
+
 	cs.m.Lock()
 	defer cs.m.Unlock()
 	for _, p := range cs.customers {
@@ -27,6 +31,9 @@ func (cs *customerService) ListPerson(p *pb.RequestType, stream pb.CustomerServi
 }
 
 func (cs *customerService) AddPerson(c context.Context, p *pb.Person) (*pb.ResponseType, error) {
+
+	fmt.Print("AddPerson called from server")
+
 	cs.m.Lock()
 	defer cs.m.Unlock()
 	cs.customers = append(cs.customers, p)
