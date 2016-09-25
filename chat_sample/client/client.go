@@ -78,5 +78,4 @@ func connect(srvAddr *string) *grpc.ClientConn {
 	grpclog.Println("client started...")
 
 	return conn
-
 }
