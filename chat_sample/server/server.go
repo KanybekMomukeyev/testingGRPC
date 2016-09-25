@@ -22,22 +22,28 @@ type chat_server struct {
 func (*chat_server) Chat(stream pb.Chat_ChatServer) error {
 	for {
 		in, err := stream.Recv()
+
 		// end of the streaming
 		if err == io.EOF {
 			grpclog.Println("server -- finished stream")
 			return nil
 		}
+
 		if err != nil {
 			grpclog.Printf("returned with error %v", err)
 			return err
 		}
+
 		content := in.Content
 		title := in.Title
+
 		if title == "" {
 			title = "Unknown"
 		}
+
 		grpclog.Printf("server -- received message:\n%v: %v", title, content)
 		revMsg := "received"
+
 		stream.Send(&pb.Msg{Content: revMsg})
 	}
 }
@@ -59,5 +65,4 @@ func InitChatServer() {
 	pb.RegisterChatServer(grpcServer, new(chat_server))
 	grpcServer.Serve(lis)
 	grpclog.Println("server shutdown...")
-
 }

@@ -28,6 +28,7 @@ func Chat(letters ...string) error {
 	// receive msg
 	waitc := make(chan struct{})
 	var recevieErr error
+
 	go func() {
 		for {
 			in, err := stream.Recv()
