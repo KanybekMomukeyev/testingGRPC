@@ -26,7 +26,7 @@ type RpcRequest struct {
 func (m *RpcRequest) Reset()                    { *m = RpcRequest{} }
 func (m *RpcRequest) String() string            { return proto.CompactTextString(m) }
 func (*RpcRequest) ProtoMessage()               {}
-func (*RpcRequest) Descriptor() ([]byte, []int) { return fileDescriptor1, []int{0} }
+func (*RpcRequest) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{0} }
 
 // The response message containing the greetings
 type RpcResponse struct {
@@ -36,7 +36,7 @@ type RpcResponse struct {
 func (m *RpcResponse) Reset()                    { *m = RpcResponse{} }
 func (m *RpcResponse) String() string            { return proto.CompactTextString(m) }
 func (*RpcResponse) ProtoMessage()               {}
-func (*RpcResponse) Descriptor() ([]byte, []int) { return fileDescriptor1, []int{1} }
+func (*RpcResponse) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{1} }
 
 func init() {
 	proto.RegisterType((*RpcRequest)(nil), "protolocation.RpcRequest")
@@ -114,12 +114,12 @@ var _RpcGreeter_serviceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: fileDescriptor1,
+	Metadata: fileDescriptor2,
 }
 
-func init() { proto.RegisterFile("koke.proto", fileDescriptor1) }
+func init() { proto.RegisterFile("koke.proto", fileDescriptor2) }
 
-var fileDescriptor1 = []byte{
+var fileDescriptor2 = []byte{
 	// 155 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x09, 0x6e, 0x88, 0x02, 0xff, 0xe2, 0xe2, 0xca, 0xce, 0xcf, 0x4e,
 	0xd5, 0x2b, 0x28, 0xca, 0x2f, 0xc9, 0x17, 0xe2, 0x05, 0x53, 0x39, 0xf9, 0xc9, 0x89, 0x25, 0x99,

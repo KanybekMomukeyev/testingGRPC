@@ -7,12 +7,14 @@ Package protolocation is a generated protocol buffer package.
 
 It is generated from these files:
 	CustomerService.proto
+	chat_msg.proto
 	koke.proto
 
 It has these top-level messages:
 	ResponseType
 	RequestType
 	Person
+	Msg
 	RpcRequest
 	RpcResponse
 */

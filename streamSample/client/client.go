@@ -10,12 +10,6 @@ import (
 	"strconv"
 )
 
-
-	//address     = "localhost:50051"
-	//defaultName = "world"
-	//conn, err := grpc.Dial(address, grpc.WithInsecure())
-
-
 func add(name string, age int) error {
 	address := "localhost:11111"
 	conn, err := grpc.Dial(address, grpc.WithInsecure())
