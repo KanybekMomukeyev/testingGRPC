@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8536ca34-97e3-41d5-ab6c-d1e3902aeb13" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protolocation/CustomerService.pb.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protolocation/CustomerService.proto" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/streamSample/client/client.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/streamSample/server/server.go" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protolocation/koke.pb.go" afterPath="$PROJECT_DIR$/protolocation/koke.pb.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/streamSample/client/client.go" afterPath="$PROJECT_DIR$/streamSample/client/client.go" />
     </list>
     <ignored path="testingGRPC.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -63,8 +59,8 @@
       <file leaf-file-name="client.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/streamSample/client/client.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
+            <state relative-caret-position="393">
+              <caret line="33" column="49" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
               <folding>
                 <element signature="e#14#185#0" expanded="true" />
               </folding>
@@ -829,12 +825,12 @@
       <workItem from="1474444120859" duration="1130000" />
       <workItem from="1474446409386" duration="363000" />
       <workItem from="1474529447888" duration="4294000" />
-      <workItem from="1474626741584" duration="5620000" />
+      <workItem from="1474626741584" duration="6065000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11719000" />
+    <option name="totallyTimeSpent" value="12164000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="3" y="23" width="1168" height="777" extended-state="0" />
@@ -882,7 +878,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/streamSample/client/client.go</url>
-          <line>40</line>
+          <line>46</line>
           <properties />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
@@ -891,8 +887,20 @@
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/streamSample/client/client.go</url>
+          <line>84</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/streamSample/client/client.go</url>
+          <line>74</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="2" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1243,8 +1251,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/streamSample/client/client.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
+        <state relative-caret-position="393">
+          <caret line="33" column="49" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
           <folding>
             <element signature="e#14#185#0" expanded="true" />
           </folding>

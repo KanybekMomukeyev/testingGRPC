@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 	"io"
-	"strconv"
 	pb "github.com/KanybekMomukeyev/testingGRPC/protolocation"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 	"github.com/mattn/sc"
+	"strconv"
 )
 
 
@@ -30,11 +30,16 @@ func add(name string, age int) error {
 		Name: name,
 		Age:  int32(age),
 	}
+
+	fmt.Print("func add(name string, age int) called\n")
+
 	_, err = client.AddPerson(context.Background(), person)
 	return err
 }
 
 func list() error {
+
+	fmt.Print("func list() error called\n")
 
 	address := "localhost:11111"
 	conn, err := grpc.Dial(address, grpc.WithInsecure())
@@ -64,6 +69,7 @@ func list() error {
 }
 
 func main() {
+
 	(&sc.Cmds{
 		{
 			Name: "list",
